@@ -1,0 +1,12 @@
+langchain 
+langchain_community 
+unstructured 
+sentence_transformers 
+huggingface_hub 
+langchain_huggingface 
+faiss-gpu 
+streamlit 
+langchain_groq 
+PyPDF2 
+python-docx 
+pyngrok 
