@@ -1,6 +1,6 @@
 # Chat With Documents Using LLM
 
-This project enables a conversational AI chatbot capable of processing and answering questions from multiple document formats, including **CSV**, **JSON**, **PDF**, and **DOCX**. It uses **LangChain** and **Hugging Face's pre-trained models** to extract information from these documents and provide relevant responses.
+This project is a conversational chatbot capable of processing and answering questions from multiple document formats, including **CSV**, **JSON**, **PDF**, and **DOCX**. The user interface is built with **Streamlit**, which allows for easy file uploads and real-time interaction with the chatbot. Users can upload their documents, and the chatbot will process and extract the necessary information to answer their queries based on the content of the documents. It uses **LangChain** and **Hugging Face's pre-trained models** to extract information from these documents and provide relevant responses.
 
 ## Features
 
@@ -9,6 +9,7 @@ This project enables a conversational AI chatbot capable of processing and answe
 - **Conversational Retrieval**: Uses LangChain's conversational retriever to interact with the uploaded documents.
 - **Chat Interface**: A simple and interactive chatbot powered by Hugging Face's language model.
 - **Real-time Interaction**: Process documents once uploaded, and chat with the AI in real-time.
+- **Streamlit Interface**: Provides an easy-to-use web interface built with Streamlit for uploading files, interacting with the chatbot, and viewing results.
 
 ## Technologies Used
 
@@ -92,12 +93,15 @@ This will launch a local web application, and you can interact with the chatbot 
 
 ### Example Use Case
 
-1. Upload a **CSV** file containing customer data.
+1. Upload a **PDF** file containing customer data.
 2. Ask the chatbot questions like:
-   - "What are the names of all the customers?"
-   - "How many customers live in New York?"
+   - "What is Machine Learning? How does it work?"
+   
+The bot will search the content of the uploaded PDF, extract relevant information, and provide an answer.
 
-The bot will search the content of the uploaded CSV, extract relevant information, and provide an answer.
+### Sample Output
+
+![Screen Shot 2024-12-21 at 4 01 44 PM](https://github.com/user-attachments/assets/3eb5e8a0-e818-4bdf-ad05-b5bd1f876487)
 
 ## Acknowledgments
 
@@ -110,6 +114,7 @@ The bot will search the content of the uploaded CSV, extract relevant informatio
 ### Additional Notes:
 
 - The `requirements.txt` file should contain the following dependencies:
+  
   ```
   streamlit
   langchain
